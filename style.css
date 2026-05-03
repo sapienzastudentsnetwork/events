@@ -1,0 +1,190 @@
+/* Reset and Base Styles */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0e0e0e; /* Dark theme background */
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  max-width: 800px;
+}
+
+header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-wrap: balance;
+}
+
+header p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #999;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.collab {
+  margin-top: 0.8rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  color: #777;
+}
+
+/* Poster Grid */
+.posters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 1rem 2rem 2rem;
+  max-width: 1100px; /* Constrain max width to prevent oversized posters */
+  width: 100%;
+}
+
+.poster-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #161616;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.poster-card:hover,
+.poster-card:focus-within {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.08);
+}
+
+.poster-card a {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+  color: inherit; /* Prevent default link styles on text */
+}
+
+.poster-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Poster Labels and Dates */
+.poster-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #aaa;
+  background: #161616;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease; /* Smooth hover effect for the label area */
+}
+
+.poster-card a:hover .poster-label {
+  background: #1a1a1a; /* Slight brightness increase on hover to indicate clickability */
+}
+
+.poster-date {
+  font-size: 0.85em;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.poster-label span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ffffff15;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.poster-card a:hover .poster-label span {
+  background: #ffffff25; /* Make the button area light up slightly more when card is hovered */
+}
+
+/* Responsive Grid and Mobile Adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem 1rem; /* Tighter padding for mobile */
+  }
+  .posters {
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* Tighter gap */
+    max-width: 380px; /* Constrains width to proportionally reduce height */
+    padding: 0.5rem 1.5rem 1.5rem;
+  }
+  .poster-label {
+    padding: 0.8rem 0.5rem; /* Tighter label padding */
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1100px; /* Align with poster grid max-width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-inst {
+  text-align: left;
+}
+
+.footer-network {
+  text-align: right;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .footer-inst,
+  .footer-network {
+    text-align: center;
+  }
+}
