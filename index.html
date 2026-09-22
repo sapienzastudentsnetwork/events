@@ -1,71 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventi - SSN</title>
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Eventi, incontri e materiali di Sapienza Students Network.">
+  <meta property="og:title" content="Eventi · Sapienza Students Network">
+  <meta property="og:description" content="Scopri gli eventi organizzati dalla community e accedi a materiali e registrazioni.">
+  <meta property="og:type" content="website">
+  <title>Eventi · Sapienza Students Network</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#eventi">Vai agli eventi</a>
 
-  <header>
-    <h1>I Nostri Eventi</h1>
-    <p>Clicca su una locandina per accedere al&nbsp;materiale</p>
-    <p class="collab">
-      Eventi organizzati in collaborazione<br/>con Rappresentanti degli Studenti
-      indipendenti<br/>nell'Assemblea della Facoltà I3S
-    </p>
+  <nav class="topbar" aria-label="Navigazione principale">
+    <a class="brand" href="https://sapienzastudents.net/" target="_blank" rel="noopener noreferrer" aria-label="Sapienza Students Network, vai al sito principale">
+      <img src="img/ssn-logo.png" alt="" width="42" height="50">
+      <span>Sapienza Students Network</span>
+    </a>
+    <a class="home-link" href="https://sapienzastudents.net/" target="_blank" rel="noopener noreferrer">
+      Vai alla wiki <span aria-hidden="true">↗</span>
+    </a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow"><span></span> Incontri · cultura · tecnologia</div>
+    <h1><span>Eventi che diventano</span> <em>risorse condivise.</em></h1>
+    <p>Workshop e incontri organizzati dalla community. Esplora le locandine e ritrova materiali, registrazioni e approfondimenti.</p>
+    <a class="hero-cta" href="#eventi">Scopri gli eventi <span aria-hidden="true">↓</span></a>
   </header>
 
-  <main class="posters">
-
-    <div class="poster-card">
-      <a href="https://mivige.github.io/LaTeXLab/"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Vai al materiale del corso LaTeX Lab">
-        <img src="img/LaTeXLab.png"
-             alt="Locandina LaTeX Lab — L'arte della scrittura accademica"
-             loading="lazy">
-        <div class="poster-label">
-          <div class="poster-date">Novembre 2025</div>
-          <span>📄 Vai al materiale</span>
-        </div>
-      </a>
+  <main id="eventi" class="events-section">
+    <!--<div class="section-heading">
+      <div>
+        <span class="kicker">In programma</span>
+        <h2>Prossimi eventi</h2>
+        <p>Scopri gli appuntamenti in arrivo e prenota il tuo posto. Più sotto trovi anche l’archivio degli eventi passati.</p>
+      </div>
     </div>
 
-    <div class="poster-card">
-      <a href="https://www.youtube.com/watch?v=AmEdogVq6iM&list=PL-QX5Ap5J6lh9p_LShFsoRBfHuk1viqNk"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Guarda le registrazioni di Libertà Digitale">
-        <img src="img/LibertaDigitale.png"
-             alt="Locandina Libertà Digitale — Etica, tecnologia e sicurezza nel software libero"
-             loading="lazy">
-        <div class="poster-label">
-          <div class="poster-date">1 Ottobre 2025</div>
-          <span>▶️ Guarda le registrazioni</span>
-        </div>
-      </a>
+    <div class="event-grid event-grid-current">
+      <article class="event-card event-current event-sovereignty">
+        <a href="https://sov.sapienzastudents.net" target="_blank" rel="noopener noreferrer" aria-label="Sovranità Digitale: prenota il biglietto gratuito">
+          <div class="poster-wrap">
+            <img src="img/SovranitaDigitale.png" alt="Locandina Sovranità Digitale, etica sostenibilità e indipendenza nel software libero" loading="eager">
+          </div>
+          <div class="event-content">
+            <div class="event-meta"><time datetime="2026-10-14T11:00">14 ottobre 2026 · 11:00</time><span>In programma</span></div>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.25A2.75 2.75 0 1 1 12 6.25a2.75 2.75 0 0 1 0 5.5Z"/></svg>
+              <span>Aula 1L, Edificio RM018 · via del Castro Laurenziano 7A</span>
+            </div>
+            <h3>Sovranità Digitale</h3>
+            <p>Etica, sostenibilità e indipendenza nel software libero.</p>
+            <span class="event-action">Prenota il tuo biglietto gratuito <b aria-hidden="true">↗</b></span>
+          </div>
+        </a>
+      </article>
+    </div>-->
+
+    <div class="section-heading"> <!-- <div class="section-heading archive-heading"> -->
+      <div>
+        <span class="kicker">Da rivedere</span>
+        <h2>Eventi passati</h2>
+        <p>Materiali e registrazioni degli incontri già conclusi.</p>
+      </div>
     </div>
 
+    <div class="event-grid">
+      <article class="event-card event-latex">
+        <a href="https://mivige.github.io/LaTeXLab/" target="_blank" rel="noopener noreferrer" aria-label="LaTeX Lab: vai al materiale">
+          <div class="poster-wrap">
+            <img src="img/LaTeXLab.png" alt="Locandina LaTeX Lab, l'arte della scrittura accademica" loading="lazy">
+          </div>
+          <div class="event-content">
+            <div class="event-meta"><time datetime="2025-11">Novembre 2025</time><span>Workshop</span></div>
+            <h3>LaTeX Lab</h3>
+            <p>L'arte della scrittura accademica.</p>
+            <span class="event-action">Vai al materiale <b aria-hidden="true">↗</b></span>
+          </div>
+        </a>
+      </article>
+
+      <article class="event-card event-digital">
+        <a href="https://www.youtube.com/watch?v=AmEdogVq6iM&amp;list=PL-QX5Ap5J6lh9p_LShFsoRBfHuk1viqNk" target="_blank" rel="noopener noreferrer" aria-label="Libertà Digitale: guarda le registrazioni">
+          <div class="poster-wrap">
+            <img src="img/LibertaDigitale.png" alt="Locandina Libertà Digitale, etica tecnologia e sicurezza nel software libero" loading="lazy">
+          </div>
+          <div class="event-content">
+            <div class="event-meta"><time datetime="2025-10-01">1 ottobre 2025</time><span>Incontro</span></div>
+            <h3>Libertà Digitale</h3>
+            <p>Etica, tecnologia e sicurezza nel software libero.</p>
+            <span class="event-action">Guarda le registrazioni <b aria-hidden="true">↗</b></span>
+          </div>
+        </a>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <div class="footer-inst">
-      Iniziative Culturali e Sociali degli Studenti<br>
-      Sapienza Università di Roma
+  <aside class="collaboration" aria-label="Collaborazioni">
+    <div class="collab-mark" aria-hidden="true">I3S</div>
+    <div>
+      <span class="kicker">In collaborazione con</span>
+      <p>Rappresentanti degli Studenti indipendenti nell'Assemblea della Facoltà I3S.</p>
     </div>
-    <div class="footer-network">
-      <a href="https://sapienzastudents.net" target="_blank" rel="noopener noreferrer">
-        sapienzastudents.net
-      </a>
-      <br>
-      Sapienza Students Network
+  </aside>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="img/ssn-logo.png" alt="" width="46" height="55">
+      <div><strong>Sapienza Students Network</strong><a href="https://sapienzastudents.net/" target="_blank" rel="noopener noreferrer">sapienzastudents.net ↗</a></div>
+    </div>
+    <div class="footer-right">
+      <strong>Sapienza Università di Roma</strong>
+      <span>Iniziative Culturali e Sociali degli Studenti</span>
     </div>
   </footer>
-
 </body>
 </html>
