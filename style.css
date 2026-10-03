@@ -194,6 +194,9 @@ a {
 .event-digital {
   --card-accent: #72a7e8;
 }
+.event-stallman {
+  --card-accent: #c7d6ee;
+}
 .event-card > a {
   display: grid;
   grid-template-columns: minmax(190px, .88fr) minmax(220px, 1.12fr);
